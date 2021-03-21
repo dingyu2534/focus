@@ -1,5 +1,7 @@
 import React from "react";
-import { Button } from "@material-ui/core";
+import { Box, Button, Container } from "@material-ui/core";
+import Header from './header'
+import Center from './center'
 
 class Home extends React.Component {
     constructor(props: any) {
@@ -8,10 +10,10 @@ class Home extends React.Component {
 
     render() {
         return (
-            <>
-                <h1>Focus</h1>
-                <Button variant="contained" color="primary">Start</Button>
-            </>
+            <Box>
+                <Header></Header>
+                <Center></Center>
+            </Box>
         )
     }
 }
